@@ -4,7 +4,12 @@ from emulator import Emulator
 # Dá se i načíst ze souboru (.asm)
 code = """
 segment	code
-..start	mov bx,data
+..start mov ax, 1
+		hlt
+
+
+
+		mov bx,data
 		mov ds,bx
 		mov bx,stack
 		mov ss,bx
