@@ -294,6 +294,7 @@ class Emulator:
     # ------- MOVE INSTRUCTIONS: --------
 
     def MOV(self, instruction: Instruction):
+        
         to_insert = self.get_value(instruction.arguments[1])
 
         # Tohle je tak strašně napsané, ale bohužel není čas
